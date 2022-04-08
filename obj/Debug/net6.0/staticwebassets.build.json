@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "1lcDxHN8/I2nOK5Kk4EB3hbUU+skhJ7fJzl+o+3cIrI=",
+  "Source": "MyFirstCLIAPI",
+  "BasePath": "_content/MyFirstCLIAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MyFirstCLIAPI\\wwwroot",
+      "Source": "MyFirstCLIAPI",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\ASP Core\\Web API\\CLI\\MyFirstCLIAPI\\wwwroot\\",
+      "BasePath": "_content/MyFirstCLIAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Administrator\\Desktop\\ASP Core\\Web API\\CLI\\MyFirstCLIAPI\\wwwroot\\contacts.json",
+      "SourceId": "MyFirstCLIAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\ASP Core\\Web API\\CLI\\MyFirstCLIAPI\\wwwroot\\",
+      "BasePath": "_content/MyFirstCLIAPI",
+      "RelativePath": "contacts.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contacts.json"
+    }
+  ]
+}
