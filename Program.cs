@@ -1,26 +1,17 @@
-using System.Text.Json;
-
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<ContactRepository>();
+
 var app = builder.Build();
 
 // app.UseStaticFiles();
 
 app.MapGet("/", () => "Hello World!");
-app.MapGet("/contacts",() =>{
+app.MapGet("/contacts",(ContactRepository repository) =>{
 
-    var contacts = JsonSerializer
-        .Deserialize<IEnumerable<Contact>>(
-            File.OpenRead("wwwroot/contacts.json")
-         
-        );
-        return Results.Ok(contacts);
+    
+    return Results.Ok(repository.Get());
 
 });
 
 app.Run();
-
-
-public class Contact{
-    public string Name { get; set; }
-    public string City { get; set; }
-}
